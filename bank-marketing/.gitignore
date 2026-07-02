@@ -1,0 +1,5 @@
+#virtual-environments
+bm-env/
+
+#python-cache
+src/bank_marketing/__pycache__/

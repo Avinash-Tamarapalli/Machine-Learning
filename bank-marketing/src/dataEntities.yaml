@@ -1,0 +1,33 @@
+dataEntities:
+  - bank
+  - bank_full
+  - bank_names
+  - bank_additional
+  - bank_additional_full
+  - bank_additional_names
+
+
+dataEntitiesDetails:
+  - bank:
+      loc: {root_path}/src/data/raw/bank/bank.csv
+      format: csv
+
+  - bank_full:
+      loc: {root_path}/src/data/raw/bank/bank-full.csv
+      format: csv
+
+  - bank_names:
+      loc: {root_path}/src/data/raw/bank/bank-names.txt
+      format: txt
+
+  - bank_additional:
+      loc: {root_path}/src/data/raw/bank-additional/bank-additional.csv
+      format: csv
+
+  - bank_additional_full:
+      loc: {root_path}/src/data/raw/bank-additional/bank-additional-full.csv
+      format: csv
+
+  - bank_additional_names:
+      loc: {root_path}/src/data/raw/bank-additional/bank-additional-names.txt
+      format: txt
