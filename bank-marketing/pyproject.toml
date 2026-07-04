@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "bank-marketing"
+version = "0.1.0"
+description = "Bank marketing term-deposit prediction — a production-style ML learning project."
+authors = ["Avinash Tamarapalli <avinash12082001@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "bank_marketing", from = "src" }]
+include = [
+    { path = "src/bank_marketing/conf/*.yaml", format = ["sdist", "wheel"] },
+]
+
+[tool.poetry.dependencies]
+python = "^3.13"
+pandas = "^2.2"
+numpy = "^2.1"
+scikit-learn = "^1.5"
+pyyaml = "^6.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3"
+ruff = "^0.6"
+
+[tool.poetry.scripts]
+bank-marketing = "bank_marketing.__main__:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

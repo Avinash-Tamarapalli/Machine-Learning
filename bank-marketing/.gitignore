@@ -1,5 +1,14 @@
 #virtual-environments
-bm-env/
+.venv/
 
 #python-cache
-src/bank_marketing/__pycache__/
+__pycache__/
+*.pyc
+
+#poetry / build
+dist/
+*.egg-info/
+
+#os / editor cruft
+.DS_Store
+.Rhistory
